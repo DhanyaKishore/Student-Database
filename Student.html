@@ -1,0 +1,61 @@
+<html>
+<head>
+<style>
+body {
+  font-family: Arial;
+  background-color: #f5f5f5;
+}
+form {
+  margin: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+}
+h1 {
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+<h1>STUDENT PROCESS</h1>
+
+<form method="POST" action="stud_con.php">
+<h3>Database Creation</h3>
+<input type="submit" value="Create Database">
+</form>
+
+<form method="POST" action="stud_table.php">
+<h3>Table Creation</h3>
+<input type="submit" value="Create Table">
+</form>
+
+<form method="POST" action="stud_insert.php">
+<h3>Record Insertion</h3>
+Register Number <input type="text" name="reg"><br><br>
+Name <input type="text" name="name"><br><br>
+Mark1 <input type="number" name="m1"><br><br>
+Mark2 <input type="number" name="m2"><br><br>
+<input type="submit" value="Insert">
+</form>
+
+<form method="POST" action="stud_delete.php">
+<h3>Record Deletion</h3>
+Register Number <input type="text" name="reg"><br><br>
+<input type="submit" value="Delete">
+</form>
+
+<form method="POST" action="stud_update.php">
+<h3>Record Updation</h3>
+Register Number <input type="text" name="reg"><br><br>
+New Name <input type="text" name="name"><br><br>
+<input type="submit" value="Update">
+</form>
+
+<form method="POST" action="select.php">
+<h3>Show Records</h3>
+<input type="submit" value="View">
+</form>
+
+</body>
+</html>
